@@ -2,9 +2,9 @@
 
 namespace Shipping;
 
-class ShippingPolicyData : ContainSagaData
+partial class ShippingPolicyData : ContainSagaData
 {
-    public string OrderId { get; set; }
+    public partial string OrderId { get; set; }
     public bool IsOrderPlaced { get; set; }
     public bool IsOrderBilled { get; set; }
 }
